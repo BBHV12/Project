@@ -2,77 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BBHV Projects | Homepage</title>
+    <title>BBHV Projects | Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="card">
-         <img src="2769504.jpg" alt="Welcome" class ="welcome">
-        <h1 class="welcome"><span>  Grade 12 Computer Assignments Archive  </span></h1>
-        <br> <p class="welcome">Baibhav Dhital, 733</p>
-        <form action="">
-            <button>Assignment 1</button><br>
-            <button>Assignment 2</button><br>
-            <button>Assignment 3</button><br>
-            <button>Assignment 4</button><br>
-            <button>Assignment 5 </button><br>
-        </form>
-        <div class="space"></div>
+    <div class="header">
+        <header>
+        <p class="logo">BBHV <span class="projects_text">PROJECTS</span></p>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="welcome.html">Home</a></li>
+                <li><a href="common.html">Assignments</a></li>
+                <li><a href="common.html">About</a></li>
+                <li><a href="common.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+<div class="main">
+    <img src="046-zombie.svg" alt="img" class="logo_image">
+    <p class="name">NEB, 733</p>
+    <form action=""class="show_form">
+        <div class="search">
+            <div></div>
+            <span class="search-icon material-symbols-outlined"> search</span>    
+            <input type="search" class="search-input" placeholder="Search Assignments">
         </div>
-
-    
-</body>
-<style>
-    *{
-        font-family: sans-serif;
-    }
-     body{
-        resize: none;
-        display:grid;
-        background: rgb(31, 39, 48);
-        place-items: center;
-        height: 100vh;
-        margin:0;
-    }
-    .card{
-        background: white;
-        border-radius: 10px;
-        height: 75vh;
-        width: 45vw;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding:2em;
-    }
-    img.welcome{
-        height: 50vh;
-        width: 45vw;
-    }
-    p.welcome{
-        margin-top: -15px;
-        font-size: 15px;
-    }
-    p.welcome2{
-        color:rgb(99, 99, 99);
-        font-size: 15px;
-    }
-    h1.welcome,span{
-        background-color: white;
-        margin-top: -45px;
-        font-size: 25px;
-    }
-    button{
-
-        width: 40vw;
-        margin-bottom: 2px;
-        padding: 2px;
-        border-radius: 4px;
-        border: 1px solid grey ;
-    }
-    .space{
-        height: 100px;
-    }
+        </div>
+    </form>
+    <center>
+        <div class="search_foot">
+        <button class="joke"><a href="you.html" class="joke">Tell me a joke</a></button> 
    
-</style>
+</div>
+</center>
+<div class="footer">
+    <footer>
+         <div class="spacer foot"></div>
+        </footer>
+    </div>
+</body> 
 </html>
