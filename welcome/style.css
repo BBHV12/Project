@@ -134,9 +134,9 @@ p.main{
 .search_foot{
     display: flex;
     align-items: center;
-    flex-direction: column;
-    gap: -300px;
-    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
     font-family: "Montserrat",sans-serif;
     font-weight: 400;
     padding: 20px;
@@ -154,7 +154,7 @@ p.main{
     width: fit-content;
     padding: 3px;
     border-radius: 5px;
-    background-color: white;
+    background-color: rgb(199, 198, 198);
     outline: none;
     border: none;
     color: black;
