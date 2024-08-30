@@ -15,13 +15,20 @@ body{
     background-color: #0e0d10;
 }
 
+
 p{
     text-align: justify;
     font-family: "Montserrat",sans-serif;
     color: rgb(212, 212, 212);
     padding: 30px;
 }
-p.italics{
+li{
+    list-style-type:disc;
+    padding-bottom: 8px;
+    margin-left: 50px;
+}
+em{
+    display: block;
     text-align: center;
     font-family: "Montserrat",sans-serif;
     color: rgb(212, 212, 212);
@@ -38,14 +45,19 @@ hr{
     margin-bottom: 30px;
 }
 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     text-align: center;
+    margin-top: 30px;
     border-radius: 10px;
     align-self: center;
     height:300px;
+    width: 500px;
+    margin-bottom: 15px;
   
 }
-
 
 li,a,button{
     font-family: "Montserrat", sans-serif;
@@ -105,7 +117,6 @@ span.projects_text{
     display: flex;
     flex-direction: column;
     align-self: center;
-    margin: 10px;
     border-radius: 10px;
     width: min-content;
     height: fit-content;
