@@ -1,0 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #cacaca;
+    font-family: "Montserrat";
+    text-align: justify;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #0e0d10;
+}
+
+
+p.top{
+    text-align: justify;
+    font-family: "Montserrat",sans-serif;
+    color: rgb(212, 212, 212);
+    padding: 10px;
+    margin-top: 20px;
+}
+p{
+    text-align: justify;
+    font-family: "Montserrat",sans-serif;
+    color: rgb(212, 212, 212);
+    padding: 10px;
+}
+li{
+    list-style-type:disc;
+    padding-bottom: 8px;
+    margin-left: 50px;
+}
+em{
+    display: block;
+    text-align: center;
+    font-family: "Montserrat",sans-serif;
+    color: rgb(212, 212, 212);
+}
+h1{
+    font-family: sans-serif;
+    color: rgb(212, 212, 212);
+    font-weight: 200px;
+    text-align: center;
+    padding: 30px;
+
+}
+hr{
+    margin-bottom: 30px;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 10px;
+    align-self: center;
+    height:350px;
+    width: 550px;
+    margin-bottom: 15px;
+  
+}
+
+li,a,button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #cacaca;
+    text-decoration: none;
+}
+
+header {
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #151318;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+p.logo{
+    font-family: "Montserrat";
+    font-size: (22/14)em;
+    font-weight: 750;
+    color: white;
+}
+span.projects_text{
+    display: block;
+    color: #28262d;
+    background-color: #00fe63;
+    padding: 2px;
+    border-radius: 5px;
+}
+.logo{
+    cursor: pointer;
+}
+.nav_links{
+    list-style: none;
+}.nav_links li a{
+    transition: all 0.3s ease 0s;
+
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+
+}
+
+.nav_links li a:hover{
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+
+
+.parent{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border-radius: 10px;
+    width: min-content;
+    height: fit-content;
+    background-color: #151318 ;
+}
+.content{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+
+footer {
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #151318;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
