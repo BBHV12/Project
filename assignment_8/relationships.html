@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT 9 | RELATIONSHIPS AND THEIR TYPES IN DBMS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+</head>
+<body>
+    <div class="header">
+        <header>
+        <p class="logo" >BBHV <span class="projects_text">PROJECTS</span></p>
+        <nav>
+            <ul class="nav_links">
+                <li class="header"><a href="welcome.html">Home</a></li>
+                <li class="header"><a href="common.html">Assignments</a></li>
+                <li class="header"><a href="common.html">About</a></li>
+                <li class="header"><a href="common.html">Contact Me</a></li>
+            </ul>
+        </nav>
+        </header>
+    </div>
+        <div class="parent">
+
+            <div class="content">
+                <h1>TYPES OF RELATIONSHIPS IN DBMS</h1>
+                <hr>     
+                <h2>ONE TO ONE (1:1) RELATIONSHIP</h2>
+<p>In a one-to-one relationship, a single record in one table is associated with a single record in another table. This type of relationship is often used when you want to split data into two tables but still maintain a direct link between them.</p>
+<ol start="1">
+    <li>Example: Each person has one unique passport.</li>
+    <li>Implementation: Create two tables, `Person` and `Passport`, where the primary key of `Person` is also a foreign key in `Passport`.</li>
+</ol>
+
+<h2>ONE TO MANY (1:M) RELATIONSHIP</h2>
+<p>In a one-to-many relationship, a single record in one table is associated with multiple records in another table. This is one of the most common types of relationships in databases.</p>
+<ol start="1">
+    <li>Example: A single customer can have multiple orders.</li>
+    <li>Implementation: Create two tables, `Customer` and `Order`, where the primary key of `Customer` is a foreign key in `Order`.</li>
+</ol>
+
+<h2>MANY TO MANY (M:M) RELATIONSHIP</h2>
+<p>In a many-to-many relationship, multiple records in one table are associated with multiple records in another table. This type of relationship is typically implemented using a junction table.</p>
+<ol start="1">
+    <li>Example: Students can enroll in multiple courses, and each course can have multiple students.</li>
+    <li>Implementation: Create three tables, `Student`, `Course`, and a junction table `Enrollment` that contains foreign keys referencing both `Student` and `Course`.</li>
+</ol>
+
+<h2>MANY TO ONE (M:1) RELATIONSHIP</h2>
+<p>In a many-to-one relationship, multiple records in one table are associated with a single record in another table. This is essentially the reverse of a one-to-many relationship.</p>
+<ol start="1">
+    <li>Example: Multiple employees can work in a single department.</li>
+    <li>Implementation: Create two tables, `Employee` and `Department`, where the primary key of `Department` is a foreign key in `Employee`.</li>
+</ol>
+
+<h2>SELF REFERENCING (1:1) RELATIONSHIP</h2>
+<p>In a self-referencing relationship, a table contains a relationship with itself. This is used to model hierarchical data or recursive relationships.</p>
+<ol start="1">
+    <li>Example: An employee can be a manager of other employees.</li>
+    <li>Implementation: Create a single table `Employee` with a foreign key that references the primary key of the same table to indicate the manager-employee relationship.</li>
+</ol>
+
+                
+            </div>
+    
+        </div>
+       
+        <div class="footer">
+            <footer>
+                <p class="footer">
+                   <a href="https://bbhv12.github.io/Project/assignment_8/dml.html"> <span class="material-symbols-outlined">
+                    arrow_back
+                </span>
+            </a>
+            </p>
+                <p class="footer">Baibhav Dhital, 12 'G' , 733</p>
+                <p class="footer">
+                    <a href= "https://bbhv12.github.io/Project/assignment_10/functions.html"><span class="material-symbols-outlined">
+                    arrow_forward
+                    </span></a>
+                </p>
+           
+        </footer>
+        </div>
+        
+    
+</body>
+</html>
