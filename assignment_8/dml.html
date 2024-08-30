@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT 8 | DATABASE DESIGNS AND MODELS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+</head>
+<body>
+    <div class="header">
+        <header>
+        <p class="logo" >BBHV <span class="projects_text">PROJECTS</span></p>
+        <nav>
+            <ul class="nav_links">
+                <li class="header"><a href="welcome.html">Home</a></li>
+                <li class="header"><a href="common.html">Assignments</a></li>
+                <li class="header"><a href="common.html">About</a></li>
+                <li class="header"><a href="common.html">Contact Me</a></li>
+            </ul>
+        </nav>
+        </header>
+    </div>
+        <div class="parent">
+
+            <div class="content">
+                <h1>DATABASE DESIGNS</h1>
+                <hr>     
+                <h2>Database Design</h2>
+                <p>Different database models offer various ways to structure and access data. Each model has its own strengths and is suited for specific use cases.</p>
+                        <h3>Relational Model</h3>
+                        <p class="top">The relational model organizes data into tables (relations), where each table is a collection of rows (records) and columns (attributes). Each table represents an entity, such as "Customer" or "Order," with columns representing the attributes of that entity. Tables are linked through primary and foreign keys, enabling relationships between them. Data is queried using SQL (Structured Query Language), which allows for complex queries and transactions. Examples of relational databases include MySQL and PostgreSQL.</p>
+                        <h3>Hierarchical Model</h3>
+                        <p class="top">The hierarchical model arranges data in a tree-like structure where each record has a single parent and can have multiple children. This model is suitable for representing nested data or hierarchical relationships. Data is organized in a hierarchy with a single root node and branches representing relationships between parent and child nodes. Each child node has only one parent, creating a strict hierarchy. An example of a hierarchical database is IBM IMS.</p>
+                        <h3>Network Model</h3>
+                        <p class="top">The network model uses a graph-like structure where records (nodes) can have multiple parent and child relationships, providing greater flexibility than the hierarchical model. It supports complex many-to-many relationships, allowing nodes to have multiple parent and child nodes. This structure is beneficial for representing more complex relationships and interconnections. An example of a network database is IDS (Integrated Data Store).</p>
+                        <h3>Object-Oriented Model</h3>
+                        <p class="top">The object-oriented model integrates principles from object-oriented programming into databases, storing data as objects that include both data and methods. Objects can inherit properties and methods from other objects, promoting reuse and organization. Encapsulation bundles data and methods together, simplifying interactions with the database. This model is suitable for applications that require complex data representations and interactions. An example of an object-oriented database is ObjectDB.</p>
+                        <h3>Document Model</h3>
+                        <p class="top">The document model stores data in flexible, semi-structured formats such as JSON or XML. Each document is a self-contained unit of data that can be nested and queried. This model offers greater flexibility compared to traditional relational databases, as documents can vary in structure. Specialized query languages support nested data, making it easier to handle complex data representations. An example of a document database is MongoDB.</p>
+                        <h3>Key-Value Model</h3>
+                        <p class="top">The key-value model stores data as key-value pairs, where each key is unique and maps to a value. Values can be simple data types or more complex structures. This model is optimized for high-performance lookups, making it ideal for caching systems and scenarios requiring rapid access to data. An example of a key-value database is Redis.</p>
+                        <h3>Column-Family Model</h3>
+                        <p class="top">The column-family model organizes data into column families rather than rows. Each column family contains columns that store related data together, improving performance for read and write operations. This model is well-suited for distributed databases and can scale horizontally, handling large volumes of data across many servers. An example of a column-family database is Cassandra.</p>
+                        
+                        <br>
+                        <BR>
+                        <br>
+                        <h1>DATABASE MODELS</h1>
+                <hr>     
+                <h2>Database Design</h2>
+                <p>Database design is a crucial process involving the creation of a structured framework for efficiently storing and managing data. The key components of database design include schema design, normalization, relationships, indexes, and constraints.</p>
+                        <h3>Schema Design</h3>
+                        <p class="top">Schema design defines the structure of the database, including the organization of tables and columns. It specifies how data is stored, how tables relate to each other, and what kind of data each column can hold. A well-designed schema ensures that data is logically organized and easily accessible.</p>
+                        <h3>Normalization</h3>
+                        <p class="top">Normalization is the process of organizing data to minimize redundancy and improve data integrity. It involves dividing large tables into smaller, related tables and defining relationships between them. This process reduces data duplication and ensures that the database operates efficiently, maintaining consistency and reducing anomalies during data operations.</p>
+                        <h3>Relationships</h3>
+                        <p class="top">Relationships between tables are established using primary and foreign keys. A primary key uniquely identifies a record within a table, while a foreign key is a field in one table that links to the primary key in another table. These relationships maintain data consistency, enforce referential integrity, and enable complex queries that span multiple tables.</p>
+                        <h3>Indexes</h3>
+                        <p class="top">Indexes are created on frequently queried columns to enhance data retrieval speed. By providing quick access to rows in a table, indexes significantly improve the performance of queries and database operations. They are especially useful in large databases where search operations can become time-consuming.</p>
+                        <h3>Constraints</h3>
+                        <p class="top">Constraints enforce rules to maintain data accuracy and integrity within the database. They ensure that the data entered into the database adheres to specified rules, such as uniqueness, non-null values, and valid data ranges. Common constraints include primary key, foreign key, unique, not null, and check constraints.</p>
+                        <br>
+            </div>
+    
+        </div>
+       
+        <div class="footer">
+            <footer>
+                <p class="footer">
+                   <a href="https://bbhv12.github.io/Project/assignment_7/database_admin.html"> <span class="material-symbols-outlined">
+                    arrow_back
+                </span>
+            </a>
+            </p>
+                <p class="footer">Baibhav Dhital, 12 'G' , 733</p>
+                <p class="footer">
+                    <a href= "https://bbhv12.github.io/Project/assignment_9/relationships.html"><span class="material-symbols-outlined">
+                    arrow_forward
+                    </span></a>
+                </p>
+           
+        </footer>
+        </div>
+        
+    
+</body>
+</html>
