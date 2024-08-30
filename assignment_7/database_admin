@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT 7 | DATABASE ADMINISTRATORS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+</head>
+<body>
+    <div class="header">
+        <header>
+        <p class="logo">BBHV <span class="projects_text">PROJECTS</span></p>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="welcome.html">Home</a></li>
+                <li><a href="common.html">Assignments</a></li>
+                <li><a href="common.html">About</a></li>
+                <li><a href="common.html">Contact Me</a></li>
+            </ul>
+        </nav>
+        </header>
+    </div>
+        <div class="parent">
+
+            <div class="content">
+                <h1>DATABASE ADMINISTRATORS</h1>
+                <hr>     
+                        <p class="top">Database administrators (DBAs) play a crucial role in the management and maintenance of database systems, ensuring that data is stored, retrieved, and managed efficiently. They are responsible for the installation, configuration, and upgrading of database servers and applications. This role requires a deep understanding of database management systems (DBMS) like MySQL, Oracle, and Microsoft SQL Server. DBAs must ensure that databases are optimized for performance, which involves monitoring and tuning the system to handle varying workloads efficiently. They also manage data backups, recovery processes, and implement robust disaster recovery plans to ensure data integrity and availability.</p>
+                        <p>In addition to technical skills, database administrators need to have strong problem-solving abilities and attention to detail. They often work closely with developers to design and implement database schemas that meet the needs of applications and services. This collaboration helps in creating efficient database structures that support data integrity and performance. DBAs are also responsible for setting up and managing user access controls, ensuring that only authorized personnel have access to sensitive data. Security is a paramount concern, and DBAs must implement measures to protect data from breaches and unauthorized access, including regular updates and patches to database software.</p>
+                        <p>The role of a DBA is dynamic and requires staying updated with the latest technological advancements and industry best practices. With the increasing use of cloud-based databases and the growing importance of big data and analytics, DBAs must adapt to new tools and methodologies. They may also be involved in data modeling, data warehousing, and implementing data governance policies. Effective communication skills are essential, as DBAs need to interact with various stakeholders, including management, developers, and end-users, to ensure that the database systems meet organizational needs and compliance requirements. Overall, the role of a DBA is vital for the smooth operation and success of an organization's data management strategy</p>
+                        <br>
+                        <br>
+                        <img src="https://www.excelsior.edu/wp-content/uploads/2023/07/Career-Spotlight_Database_Administrator_Blog-1000x568.jpg" alt="DATABASE_ADMIN">
+                        <em>Database Administrator</em>
+                    <br><br>
+            </div>
+    
+        </div>
+       
+        <div class="footer">
+            <footer>
+                <p>
+                   <a href="https://bbhv12.github.io/Project/assignment_6/dml.html"> <span class="material-symbols-outlined">
+                    arrow_back
+                </span>
+            </a>
+            </p>
+                <p>Baibhav Dhital, 12 'G' , 733</p>
+                <p>
+                    <a href= "https://bbhv12.github.io/Project/assignment_8/database_designs.html"><span class="material-symbols-outlined">
+                    arrow_forward
+                    </span></a>
+                </p>
+           
+        </footer>
+        </div>
+        
+    
+</body>
+</html>
