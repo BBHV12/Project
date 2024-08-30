@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT 11 | FOREIGN KEY IN SQL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+</head>
+<body>
+    <div class="header">
+        <header>
+        <p class="logo" >BBHV <span class="projects_text">PROJECTS</span></p>
+        <nav>
+            <ul class="nav_links">
+                <li class="header"><a href="welcome.html">Home</a></li>
+                <li class="header"><a href="common.html">Assignments</a></li>
+                <li class="header"><a href="common.html">About</a></li>
+                <li class="header"><a href="common.html">Contact Me</a></li>
+            </ul>
+        </nav>
+        </header>
+    </div>
+        <div class="parent">
+
+            <div class="content">
+                <h1>FOREIGN KEY IN SQL</h1>
+                <hr>     
+               
+                <section id="foreign-key">
+                    <h2>Foreign Key</h2>
+                    <p>A foreign key is a field (or collection of fields) in one table that uniquely identifies a row of another table. It establishes and enforces a link between the data in the two tables, ensuring referential integrity.</p>
+            
+                    <h3>Example</h3>
+                    <p>Consider two tables: <code>Orders</code> and <code>Customers</code> <br><br> The 'Orders' table includes a 'CustomerID' that refers to the 'CustomerID' in the 'Customers' table.</p>
+            
+                    <pre><code>-- Creating Customers table
+            CREATE TABLE Customers (
+                CustomerID INT PRIMARY KEY,
+                CustomerName VARCHAR(100)
+            );
+            
+            -- Creating Orders table with Foreign Key
+            CREATE TABLE Orders (
+                OrderID INT PRIMARY KEY,
+                OrderDate DATE,
+                CustomerID INT,
+                FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+            );</code></pre>
+            
+                    <p>In this example, the <code>CustomerID</code> in the <code>Orders</code> table is a foreign key that refers to the <code>CustomerID</code> in the <code>Customers</code> table, linking each order to a customer.</p>
+                </section>
+            
+                <section id="join-statements">
+                    <h2>JOIN Statements</h2>
+                    <p>JOIN statements are used to combine rows from two or more tables based on a related column between them. Here are the common types of JOINs:</p>
+            
+                    <h3>1. INNER JOIN</h3>
+                    <p>The INNER JOIN keyword returns records that have matching values in both tables.</p>
+                    <pre><code>SELECT Orders.OrderID, Customers.CustomerName
+            FROM Orders
+            INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;</code></pre>
+            
+                    <h3>2. LEFT JOIN (or LEFT OUTER JOIN)</h3>
+                    <p>The LEFT JOIN keyword returns all records from the left table (Customers), and the matched records from the right table (Orders). The result is NULL from the right side, if there is no match.</p>
+                    <pre><code>SELECT Customers.CustomerName, Orders.OrderID
+            FROM Customers
+            LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID;</code></pre>
+            
+                    <h3>3. RIGHT JOIN (or RIGHT OUTER JOIN)</h3>
+                    <p>The RIGHT JOIN keyword returns all records from the right table (Orders), and the matched records from the left table (Customers). The result is NULL from the left side, when there is no match.</p>
+                    <pre><code>SELECT Orders.OrderID, Customers.CustomerName
+            FROM Orders
+            RIGHT JOIN Customers ON Orders.CustomerID = Customers.CustomerID;</code></pre>
+            
+                    <h3>4. FULL JOIN (or FULL OUTER JOIN)</h3>
+                    <p>The FULL JOIN keyword returns all records when there is a match in either left (Customers) or right (Orders) table records. It returns NULL values for non-matching rows from both tables.</p>
+                    <pre><code>SELECT Customers.CustomerName, Orders.OrderID
+            FROM Customers
+            FULL JOIN Orders ON Customers.CustomerID = Orders.CustomerID;</code></pre>
+            
+                    <h3>5. CROSS JOIN</h3>
+                    <p>The CROSS JOIN keyword returns the Cartesian product of both tables. It returns all possible combinations of rows from the two tables.</p>
+                    <pre><code>SELECT Customers.CustomerName, Orders.OrderID
+            FROM Customers
+            CROSS JOIN Orders;</code></pre>
+                </section>
+            
+            </div>
+    
+        </div>
+       
+        <div class="footer">
+            <footer>
+                <p class="footer">
+                   <a href="https://bbhv12.github.io/Project/assignment_10/functions.html"> <span class="material-symbols-outlined">
+                    arrow_back
+                </span>
+            </a>
+            </p>
+                <p class="footer">Baibhav Dhital, 12 'G' , 733</p>
+                <p class="footer">
+                    <a href= "https://bbhv12.github.io/Project/assignment_12/normalization.html"><span class="material-symbols-outlined">
+                    arrow_forward
+                    </span></a>
+                </p>
+           
+        </footer>
+        </div>
+        
+    
+</body>
+</html>
